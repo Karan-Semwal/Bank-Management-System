@@ -7,6 +7,7 @@ GuiManager::GuiManager()
       m_dashboard(std::make_unique<Dashboard>(m_dashboardSize.width(), m_dashboardSize.height()))
 {
     m_login->show();
+    
     QObject::connect(m_login->getLoginButton(), &QPushButton::clicked, this, &GuiManager::onLoginClicked);
 
 }
@@ -17,7 +18,6 @@ GuiManager::~GuiManager()
 
 void GuiManager::init()
 {
-
 }
 
 void GuiManager::onLoginClicked()

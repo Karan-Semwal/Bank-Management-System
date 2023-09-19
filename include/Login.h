@@ -18,7 +18,6 @@ public:
     ~Login();
 
     void init();
-    void events();
     UserType processLogin();
 
 private:

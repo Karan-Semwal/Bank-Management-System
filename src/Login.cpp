@@ -15,11 +15,6 @@ Login::Login(int sizeX, int sizeY)
     init();
 }
 
-void Login::events()
-{
-
-}
-
 Login::~Login()
 {
 }
