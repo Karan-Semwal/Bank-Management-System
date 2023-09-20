@@ -14,4 +14,7 @@ Dashboard::~Dashboard()
 
 void Dashboard::init()
 {
+    this->setWindowState(Qt::WindowMaximized);
+    this->setStyleSheet("background-color: #b9b4c7");
+
 }

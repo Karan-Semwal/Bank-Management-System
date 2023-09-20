@@ -11,18 +11,19 @@
 
 class GuiManager : public QWidget
 {
-    Q_OBJECT
-
 public:
     GuiManager();
     ~GuiManager();
 
     void init();
 
+public:
+    UserType userType;
+    
 private:
     QSize m_loginSize;
     QSize m_dashboardSize;
-    std::unique_ptr<Login> m_login;
+    std::unique_ptr<Login>     m_login;
     std::unique_ptr<Dashboard> m_dashboard;
 
 private slots:

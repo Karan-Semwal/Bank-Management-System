@@ -34,6 +34,17 @@ QPushButton* Login::getCancelButton() {
 
 void Login::init()
 {
+    // colour
+    this->setStyleSheet("background-color: #352f44");
+    m_cancelButton->setStyleSheet("background-color: #faf0e6");
+    m_loginButton->setStyleSheet("background-color: #faf0e6");
+    m_loginLabel->setStyleSheet("color: #111");
+    m_username->setStyleSheet("background-color: #faf0e6");
+    m_usernameLabel->setStyleSheet("color: #faf0e6");
+    m_password->setStyleSheet("background-color: #faf0e6");
+    m_passwordLabel->setStyleSheet("color: #faf0e6");
+
+    // size and position
     int x = m_width / 2  - (100 / 2);
     int y = m_height - (200 / 2);
     m_loginButton->setGeometry(x - 60, y - 50, 100, 40); // x, y, w, h

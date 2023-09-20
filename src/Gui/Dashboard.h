@@ -8,8 +8,6 @@
 
 class Dashboard : public QWidget
 {
-    Q_OBJECT
-
 public:
 
     Dashboard(int sizeX, int sizeY);

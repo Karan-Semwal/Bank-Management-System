@@ -10,8 +10,6 @@
 
 class Login : public QWidget
 {
-    Q_OBJECT
-
 public:
 
     Login(int sizeX, int sizeY);

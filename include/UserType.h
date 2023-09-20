@@ -2,5 +2,5 @@
 
 enum UserType
 {
-    CUSTOMER = 0, TELLER, ADMIN
+    NONE = 0, CUSTOMER, TELLER, ADMIN
 };
