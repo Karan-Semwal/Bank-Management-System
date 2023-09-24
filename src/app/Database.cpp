@@ -86,7 +86,7 @@ void Database::retrieve()
     close();
 }
 
-bool Database::executeQuery(std::string& query)
+bool Database::executeQuery(const std::string& query)
 {
     connect();
 

@@ -13,7 +13,7 @@ public:
     static void insertIntoAccount(Account& account);
     static void close();
     static void retrieve();
-    static bool executeQuery(std::string& query);
+    static bool executeQuery(const std::string& query);
 
 private:
     static sqlite3 *m_conn;

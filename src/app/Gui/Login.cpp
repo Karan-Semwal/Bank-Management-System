@@ -21,7 +21,9 @@ Login::~Login()
 
 UserType Login::processLogin()
 {
-    return UserType::CUSTOMER;
+    std::string email = m_username->text().toStdString();
+    std::string password = m_password->text().toStdString();
+    return UserType::NONE;
 }
 
 QPushButton* Login::getLoginButton() {
@@ -47,10 +49,10 @@ void Login::init()
     // size and position
     int x = m_width / 2  - (100 / 2);
     int y = m_height - (200 / 2);
-    m_loginButton->setGeometry(x - 60, y - 50, 100, 40); // x, y, w, h
+    m_loginButton->setGeometry(x - 60, y - 50, 100, 40);
     m_loginButton->show();
 
-    m_cancelButton->setGeometry(x + 60, y - 50, 100, 40); // x, y, w, h
+    m_cancelButton->setGeometry(x + 60, y - 50, 100, 40);
     m_cancelButton->show();
 
     QFont font;
