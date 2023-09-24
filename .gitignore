@@ -30,8 +30,6 @@
 
 # shell scripts
 Todo.txt
-clean.sh
-run.sh
 
 # build directory
 build
@@ -39,6 +37,3 @@ bin
 
 # editor's
 .vs
-.vscode
-
-*.db

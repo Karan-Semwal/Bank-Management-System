@@ -1,5 +1,7 @@
-## Bank-Management-System
+## Bank Management System
 
+```
 C++ 17
-Qt5 (GUI)
+Qt5 (Crossplatform-GUI)
 Sqlite3 (Database)
+```
